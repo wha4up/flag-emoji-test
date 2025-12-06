@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/webp;base64,UklGRgIZAABXRUJQVlA4WAoAAAAQAAAAjwEAjwEAQUxQSNIDAAABCsq2tS1vm09rhZORjLNacmhU5huIR2VmrpnuoMzcMHMyZ5zZs7ByAczMkX77G4h+8lrvO/qe730jYgKQ2Eyuo/PnjbsPn7qmY5YMoXrq8G75ubMjlzET6iMfLBy5aYlTRvBB28SQfXv1GUumuhrZlGv8el9giVX3f43UmvzytpInWdn2MtKo+ZuznnAVkjZzl973xKuYlya5NSVPwLImnxaNC4uWiItoTINJvdctIaNfE/fcUU/M+nyypv055skZKgl6tGBJuiCJ6X9giVoHkjFrsyVsSALaj1vSRnvsXrhkiRsas9fvWfKW12P1aWAJXD+LUe+4J3H0xUY9mWtMPhunM0gsXgosoeurMXjuriX1uxLZ7EuW2CERzTjuyR0zo9liCX5rJH2W5PsjePQBzamENv24J3poWL95sv89pKcCutOnQ5l02BL+kclh9HvSRwgN12kPWt9CT/yoK1+kviLqWWPJX+qYV6I/QW3LLAMuq6nlHgeI1vKdZcHvaph0jgfOTqr2imdCrbaNC6RKU4kLpLFSp2dDrbSfDw5UyAZ8oNmytzwjvl22hhOk7CwnnAHQ5llRgA944QPgP15YaDDKC6PI3OIFQc4zoy7gBu3kBv2FG2QTN2zeyw04yA2HTnLD6RvccIMfAm4Y887/zv/O/87/zv/O/87/zv/O/87/zv/O/87/zv/O/87/zv/O/87/zv/O/87/zv/O/87/7pLKDbjBDTf44SQ3yEFuOLSXG7CJGzb/wg3SxQ2dC7hBc9ygmVu8IDCjvDAK/M8Liww+4IUPgDZeEABnOeEMAKzhBCl7mxNQlg34QLNlOMAHioqdfKCVmkpcIE2VsJ0LtqHqK1yg1Sad54FzWg3f8cB3qLH1HgcIasEyDliGmucF9KeoDWvpT1BnvkR9gnqwkPpg6m66TntorA8DtDeIECcfobyjCANPB3Snz5hwf6e73xHy9ALVndCw8OgDmlNB+AM0N4Aot1LcVkQ6s0BvhZnRYPYlaoOYqJ+7S2t3BdG/HlCavok4fjZOZ/jcxLOfzmDi2jdOY1ATXwkoTAVxfv0+fenriPcLl6nrsiLu7QXaKrQj/rO2UBbEJHLwAVXpIJL66AmakseQ3Ol/jdETdLpJ9AvHqAkvmqRPGrpOSRieZFKwcWGRiopoNCmZX1uioGAtTIrOW36feh6smG9Stvmbs5Rz7psWk8KTX94e0IxufwUmrZu+PhBQix6QJqR79u3VZ+hEVyNrJsT8BwtHblLHrRF8kDcTaibf0fnzxr2HT1+7TglQObx348+dHfmMSSxWUDggChUAADCEAJ0BKpABkAE+kUagS6WjoyKlEDh4sBIJZW7hI+kPTgzwhi1jA7nKDY787+V3Ul9leIeg+N/3ifxvV9/yPXt+jf+l7h/Pe8zX7MerX/qf2w90n9q/w/A5/0n/fewL/MP9p60frE/u3+0GZAvKft/+S/rn9P6Az9J29PUg+Q/kPz3xP/jX6p6AX41/ROwr8X0AP1E7xD5H9TPqT/qf636q/Gu0AP49/X/1294z+y8xX1twQBaaKe2XlbnVL3yf6CntkueJb5dJ3niqeHnV26jd9q++22IEUZDFQb3mK7t1ba7rQWICQRSWGij1L5DUKC0BYCn2vfKL1eXRypSreVQQBdgBaH7seLZxwqXvljNLxrtBMbo2d3OE+sJ+PUsNfNbHYDY1BBfAC/vikmV2qZwo0yHeK2NWGljfdB9nOqszafqX0J4BcwpXqc8L2Bkwo8vJSr+cZ0buNK11+w3iGS+rJjmTgfyR9DF0vMJFIZyI4Ay56UrjI1UYiagX/nZh/4BwK1/5XinwHy1XUnXuOMV72X6Y/s/3FKpG1wwPAW+cBLYLKUvXcXl/53FULwvQu0LxvoYcertRqg3MLMrnJlBv9ZvU+tbnhx79ygUCh6sFdCNa/pfN4nmMnbLb5fJVfRGGbAJrU8R8EUAxjHGYbhesfYAOIxNN4rSMCObExAL8nkfA/ORsSo6CJ9YUciy0SZLFec9OyQ+8YlyyKKcBTxppTLKEnC+O9vN/ehLawyyAdB5s7BXz/E3ew5TB2cuYDOYxHfSCQwJMrIffSAhGVurFgtw1JPZadWvezNTXedSu6mwJ8QDA4t/2wMaxS1t03BqygJy2oTvffigZTieXRaGB4p4BWQRKmJ9WKOYQIFhzzAExWNM1E6/vSbXqJPyvxQosF9jrU5WVCAAYl1HtvnlphMrWoY0sVW1G/BTbx03jEISHQX395l5n13wnH0I25VXVyOGPTfTRpYT9USJIwH2jHrj0+wNebZbl8PVksgVY4BkbrVzeov7RjkgxehTW6c/L1Cy0q+ys7H2/1QuBGpJ3cPLLc5GYqhsQW7Ncdw8EScyxw0gLr1lmA7117JL+hnHqfnlRIizeAJlZEzWCJAXbCHfVB+Pt7BzchmXOgh3Oz65bvwfbCra9k4C1OBWVEPsPpVi6cr6k0XegD3CgJ51kAgfb7d+j7HrO9h7CViTkhRjuuXe3dSKgBcO9fuKDoh+PWoaqIhS9KNt+D18ga+6X8gzrLQk79TWzJ0od8ip0jUho9WnANfK9HCC1jg9TYHyLa9t1E3/MQb1QOJzN9q7oMD48Ad6SaWxepFf55Y8NpuYNH3kHjwzz/VTW4HZnOtwjLsaD2uhqNYO7dS9epukIxX3bFg7t1L5Dl6vZ22cnCME3yCcDYF8Bl/oOIxQwrQ6lpuzk2XlbjQAA/tB4//62P/Nj/zY/A6/4GMPQhQAA0WyJcXl/EAhQ/5/EsMBxJyTtnk4o4cu5x/UCEYWEAttnRy/uRLuNZLNpic3VqPaevqeb7L5jGLtkPR4reFjg1z0VRcU7obTGPY4wky8D3ZAgPmdQItGWPh6hD9W7E084Q+xZ3HT49OAxE0lUapXjWqj/JDvDyD7tiP7D/ijk0nHp8uhnPwmbc6ZBmj3fTKZS6f85/H17id/IY92TMMASQ6F8FjVoXOpQMKHG1oVK7bievX4xVAn9Q/eCeCm5Lo9zLIcFY4lJjScCUcXMBITldOy68Dfn7H4A6bHAAecoiWWfgl3/azTBaEXrYj+N8YBhFNGAshAuKCba5TZYHBDNqJDJMPYZU2kUL8CH7WqW+UglYeA2/5hni+DEcTWMwuLUJI7/cYVuUtaZHaVfsFP0/sHzIHGFdIyPraw+QiobxHpwjhiDh0JRLOV321AV/KubU1+rv+2clHJwDnqKBsVu0GwbAptklJ0087PoWB9z6GuGVU7oR9jeac9PZ/4USrCqe/Z0FuLJIfVF/OS67iMs9aNkDhIbx1TtZxVYnR7TGFPskVuZQ38GvfviTqM5y6gQX+6Fssfom5k35CUpqhTX+pIpyPe6OHkl+Cjvgfjmn/y6qWse3d+14Mesrl0jZNWpaVi/0vd10/iNipeqkP+Vd53NQ5kOQCFvdCFTvty9RLGZvIokyGlNHiQP2NZ/r3kJ3rgsPAvrm8A2DYYeUHrIWXIS6HIdFD2VigFEHv/lJCAd4R2piDKBbsHBp53jF+xsboZ70IeTicTmh4UTGvPBb7UVxsjVyWe88WrCb9AOX0X17iBhigbhJ1IYVvYRe2KKitjTRDHGU672/0NslEcQzddVZJ+WETmhpPJBz7yk6LK8Imlayme8IWh2/UBwKR4HJKzL3bt8HGxY3Su5nIChnabadjRZVr1wYK/9dbV5EE9bx8Drq+EmEpaLEATgo+yLeQPC6Widln5fb06gcn1Zb54em1V8GN16vzQX1HVG7hMXbUS8tTfKqJqRyiwEOn11UkKRPAY3LUOQMLVtc9suX3JKXKGQchS9NequItDs5V5kJ/pG0krc8fZHAUdhDo65QzG5NlUeISEaBQUSzJiwdWQfJoEmeqLllR9va5JClCD62CiUSv4ZRZXQUuMWVdRh5REZiei+LMEoxapePO6AZRur68Z3LLDePcHDLA3GVe/dJiEvObpFl3SuAHZr5PWV7xDqOCdT9wlhPgs3K+SPYrLzesP0/MIBzT5tM+Uvi4GqAuIrxa3YUIF+22BWKo/MR5uideV+sL6WgJEH5obxlUu0KpJyjhk6CsPD9D/j3q9LUCMTvDydu10QkBuKd+he7h2gffODPVwFtKR7rR00d1YaEQWe+e87qElRr9sVUqdcFDuPHvNBA342P4bMyDfV+NqTfGMn3zGRrMYpG5IEjypKChDkg+0JnXjfR5x/RH/SRuajqJ/Ktpb7AxTjSuEZgplEppzzEuB9/Ybzm1blqA0LqUIajQINjnfbqzJ9AODBGNoOf2bDa3xHhbBGlzvuPGt0M171kVq0OagdF76gw/CMEy9vw0+n0LUuchWEkLZ5+vXhf2uGdafA1O7hKKN3WFmQ7orh5bkuD35ftYeVgl7jdS3e54rPoWsN0tImnfnHH3U4YwiONfNaE1Z+s88/UnPPWaijwgats6OOMXukS/0sZSBVW8o9NS6qduN01AWYo+n+cGFrTKeTIxzvVv88u9zat0eOPMMIsGVsYbUy/uFUNBgPa6Q92AytYrCf8Sh8L+7YzFVRK4Z3zfu8xYI2iH8/2BH+8CPoswBdaY3I4m6zivOJzD3hmoHi16Cn3D2QLTHLu/KilfTRBkEBBRRfeAJlsfVbCAwhOwOOXU8vs7GOwsj5yTjHMiXq/0QE+mlyIdHRECPx6eqvmaAo6Y2s3K0xncOFPI1tKd6ya0CAPnLuZ/vmMuOpD4AqEo0QD8VZH2jytuez7Y8CJokRRqZtOYpCSyNuJXSGsXtBfOK3g7V8V9+Cc/+rpdrLg5SIc5tssuoC10OiU0EQgwINgz0Ug+x5YYf3dkMYQzKfkaLTcdwX8GcD3CAeDRER2YChwxib9jnM2WR3eup6pgGHwhpMCezyHAXcN+4Cl01syWCFPFWm1vwIRM+py0l/Af2FurcOrxNKNCwo89UADG7wuhBI27jfM2kx1pS5b1Cw6+qsi8gVnwHBiSKnDKAZnF4VnOrWLSS9zQ2B7wcKnyRY5sw5r6mXLtQeUMvWXHd/nUo78zlYdm/EQ5N6SAG6+THNtuKnKNDhjgq34areNA9dtLCKhak87I7YdxTbpJ1PCYkPxp+61+qGfN0ICf5vJmvVmk07iciatb64+KmJ8N0g4PYsXXvaHKY2PPqveb8c4moIuyBlWpJ8fSCNa6mYuvDAlBTB2hyg2Uuw+uxj5lySvTlPYymtUNMYiIBrijiPOezlxXEidoFd5GbgcPQ3DS114SO28QPFygywHqagKiGbIBj7I1T4kejFBMshLi09V/wj8M5A031FtfQwcE4lbHN2txGK/4a3dew2hJKtWW5gLQ9LsqaubCcvl6KvsP8lE3vJYfS/2cJCGrxeGDqok7ZgM99JpPww6YQjwoBJSeEXbKvntWHm5jPRPmkeds+gR1GF6Q0U/5uantW/XlhMv4bNnuooa9G5G4hrXZeBaeB849t6gcNNnDSmg9EuMKgmhmrUgPM57o4Icr6peEPD1h87zL4f/JYLMZ6XLeYZgDQ3X1+hIwrRM/EfSXs+sBgMFMvDxIySc71zg1tg5bwF0/LGmvuoWyzYodryPhqyBxAlPSUIziFcR0oVjR5F1UzBB83uJhQ9xN7STXpIAWsRqBf3UQv1rynOrfPoalWQI2M5iBhkLeAVG/UKD4TrZm7/3Rc98zG1oCR6tKjvtCc4yCsE0WkJd771SD86OJ1vnJu9BKWCNTTflSkGBylMVNLAW7vi4e0QCD0SmsxbBV0xHGQ2K0F/hpQA+A9+n6qjg6qXIKytxYl1Aax9LMJMHzIz2YTI58ZqUtgCDwuJuYr1Mf7fi+tUjoKna2iUd0gC4rTb1affx9qGBVydABpnWwkPX4mm9XENdWe5PwgNp8aXaoLBrhLwmvONfYeXy/7kHAa+5ffqJVhmcVhNTFbpVsXo0OWDwegzHpYpwgWamJeYPBMnOoaeXwgahVFVdnw/Q+NvBKwzQIcscmC64ldfFmq+mjOxf+nzaHXjzQDStKWbSFLDyF2zH+/dr9HZjw5upl3JAYcXNoGxgKzXuazLLJ2g0+vwN06B1OFrefKXBQfryQSGT0dv84N0i08Ha4+Msk/OmJVRbqmXZMRqh83nrDId2FQqJ0X0Hki0JFH+MbfubvVHJYadMQC+CREmNo0KGgMXgw6wUSP2RGh7jZZulJu/vUHOnZpgnUZcxQ9vv8VEdeOxxxTacj0YfyP3NWoT5d1ZxTJSlPC8pXhVa4TNPBv9pA3eTEJ0SiRCR+RzVTsS4xBDua0OD1MJC3RY4t3A5O7/TNpY5cyh1JBeBA7CfOE+ykr1OPxxUTeoJO2bnLbWFreNIjTnjYj/ptJUHCz/Rs5wpvZnsse1GmG38QkSa+BxRwQ36i4qvL/WC25uffZiIOAYprIlOhPE/TBUkrmvTy+yeYq6vtjsvnyf8H9R9YxCDtFlBZ2LC094GzYDWGCf7qT0Vbgz42zZE+zaoconFdCWN7+nza5V0UMpbtE8Nyk7JqeUM5/10EDFptBwIRqHwEKLfMxMyNRTxNQRLZGtb9eergVtGDmxTmXeBJu+lXB5L5IL68/db7YblArD3NwICdZZ09wWJ/Loge6Q9zne/CD1OxboQR4XmblixzbTzl68qCRsLRZ7a4yv5f3K+2mlGdhIvMEzga73FXOyOwGcF0RTqNsnPJP3jpVmbG//80BVk3qvdrCnGJ2ib7t7UEI4qlO7Dnvjp5Nso0l82aDVbVesesBppmsD6EBo+pP2U0J9V9eGu1Js8xlmzNABL4VYsyv4c8afOR8RZz4N7FUZfw2sQC9qrb3Zzw5fl2U5fCfSWj2XSB55ihVziEQ5HLvcg00zSKgH3gyEIEcnkYA3kIoAF18akXRqYiaLWdr9CA8uf9TxcAIDDx2QkcECa4UJroLjnWqJ5Oar79JqMvKH3Dm3SOslbQEd1VrpdDrmKBqMGYsieG/ocB3uyXjY87fRIQd/AORqfpJloOLeyDo0N6IIaKwiG4uy30JZ+bA2rnsqvSmVurvecrVA5YwRxrS/1qjfO7gGYNeDRAANNCVrTSm5yYtcksf6aWsAwr37jauowkAA037zz/EIXg88WuGD3zZjn5bTPCaiMb9zHMUZTv+SixS6o8oZzHJcOGwhG7KEGJo468n4bPzGPzgwANNSlOGtCKQP6k6EVAMXQrc2z+WMYYtQ7w/qVRwD3WyUxhc1/17klNljH62MD0gPh+rP/dTNQfAcGEPSc7Y2NRxYzSPIC4HdF3qHbw/aUKo7gz654hRSF7KcYm2Y7lBwTanlryG89oehAdjueQCXoT9tn+zxhDDa0blBPh1JWqoxeMDPoRG4+EiNicNcFyxRTDH5v1xM3K5vM0BzaZ1xd7S0rFL5cA7wUCM6f0/JePL/EsQpFh3VDGZiSU4mVqH3UNh0ZmLGIhvtgLJDaBomPxIwaB7/5eyuuHRlGoTJ5AMTcg/sVJ7w0gZyd/5G/z4r0oOPb1fr6vIJwnJqxZYgsSSrShYX5M+edEkRkhLXhFZRFJQ46+HJ3zXy5h00jdTLhorxdaXaZtYVBpIHtsukk7f4NCzL6dAqNp2JadwnFlOtUgvjdByOW0SifwMgnGUBOOwchFaN1pTgPsp8xXxkh8hCjRL2SHJhW9fYMuYyMNxTcu9vd1pUpR6PYTrCpHL9fIAIKO073ueovbPdaIQ1gZYYx2sVOf7+xtYXGKbLVdDw/yhRuyS70kju+WoQJnUMBRVuQ8HZKyE35p22v5w64V9iNurKuTELTe6Vy6J4d+Kbba6gf2sFm9aGF0GdeE53ihWKJe5PDg4teP3Z5rjrmbbX2hD1uV6iHpSPPOgJGsW+dlok2KrTAXmDVMz6msGrvO8AJta727YpQoEsfvm2BI/TYNP77o4R3awsFnbxOe8dyNIFo6F8F6RpRwkj0LICbNwXM7oXWYxILUFTOz8+0M3ZRxNUX89tVIn1OOF338GiVssfPTbUffto9EQLO6HInvkOXG7Y43CbBgvJvX4Wwn53hjebxIDkaTueIaM9P0E2n76pqHp1ierN9RSmA7JSzzgLB9l9AaJ6SnwVNmPyKRwDUpaoBTxQnFCAFOfu0bROfX3h8dONszS2RNKO9pC/ocHLPHom1mvUKkAZRVym+Rjz8DsouXdHPsL0DJr5kkCxcyBeRJ8Y7KyAdtkoj+V/XRbNJ9z029x+e1X+IaEXu4KqUvImFjCANPUA/ZlbI4cWJkFlfPT065n98ALDMX5e3m3P3ObvhfM1M/WHs1DQjETMwHlH7wMrWEDLgPiimYKTzloREBUEZrNWKKww7szppzQIePYUg6blLq1/bQ4vX1N6BXLCR+Xz74FwoeNez/25qmmPRllayPanVLRf/O5qp/EErmT2B9zJGxGaKqHDxHI+6cdPtq0zYS/x9aYoSjmQHTYR3tITjuPRObHKY1DeCqNS945EkGxa+uTt7pS9kJWXJ34CUysjozw4jak5fKQAIiiMmB5ekGDR3vFy40QAAAA=">
+    <title>Windows 11 Flag Emoji Ultimate Test</title>
+    <style>
+        :root {
+            --bg-color: #f5f5f7;
+            --card-bg: #ffffff;
+            --text-color: #333;
+            --border-color: #e1e1e1;
+            --accent-color: #007bff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        h1 { margin: 0; font-size: 1.8rem; }
+        
+        .controls button {
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .controls button:hover { background: #0056b3; }
+        .controls button.secondary { background: #6c757d; }
+
+        .test-section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .test-section h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        /* Grid for flags */
+        .flag-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 1.5rem;
+        }
+        
+        /* Specific Test Styles */
+        .large-text { font-size: 3rem; }
+        .small-text { font-size: 0.8rem; color: #666; }
+        .inline-demo span { margin-right: 15px; }
+        
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        .editable-box {
+            border: 1px dashed #999;
+            padding: 10px;
+            background: #fafafa;
+            min-height: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div id="header-text">
+            <h1 data-i18n="mainTitle">Windows 11 Flag Emoji Fixer Test</h1>
+            <small data-i18n="subTitle">Verification & Stress Test Page</small>
+        </div>
+        <div class="controls">
+            <button onclick="toggleLanguage()" id="langBtn">Language</button>
+        </div>
+    </header>
+
+    <section class="test-section">
+        <h2 data-i18n="secBasic">1. Basic Display & Typography</h2>
+        <p data-i18n="descBasic">Check if flags render correctly in different sizes and styles.</p>
+        
+        <div class="inline-demo">
+            <div style="margin-bottom: 10px;">
+                <span data-i18n="normal">Normal:</span> 🇨🇳 🇺🇸 🇯🇵 🇬🇧 🇫🇷 🇩🇪
+            </div>
+            <div class="large-text">
+                <span style="font-size: 1rem; vertical-align: middle;" data-i18n="large">H1 Size:</span> 🇨🇳 🇺🇸 🇯🇵
+            </div>
+            <div class="small-text">
+                <span data-i18n="small">Small:</span> 🇨🇳 🇺🇸 🇯🇵 (Small text validation)
+            </div>
+        </div>
+    </section>
+
+    <section class="test-section">
+        <h2 data-i18n="secEdge">2. Formatting & Edge Cases</h2>
+        <p data-i18n="descEdge">Testing nested tags, contiguous flags, and complex text.</p>
+        
+        <ul>
+            <li><strong data-i18n="bold">Bold:</strong> <b>🇨🇳 China</b> and <strong>🇺🇸 USA</strong></li>
+            <li><em data-i18n="italic">Italic:</em> <i>🇫🇷 France</i> and <em>🇮🇹 Italy</em></li>
+            <li><span data-i18n="link">Link:</span> <a href="#">Visit 🇯🇵 Japan</a></li>
+            <li><span data-i18n="combo">Combo (No spaces):</span> 🇨🇳🇺🇸🇯🇵🇰🇷 (Should be distinct)</li>
+            <li><span data-i18n="brackets">Brackets:</span> [🇩🇪] (🇪🇸) {🇷🇺}</li>
+            <li><span data-i18n="mixed">Mixed text:</span> I❤️🇨🇦Canada!</li>
+        </ul>
+    </section>
+
+    <section class="test-section">
+        <h2 data-i18n="secInput">3. Inputs & Editors (Should NOT be images)</h2>
+        <p data-i18n="descInput">The script should generally IGNORE these areas to preserve editing capability.</p>
+        
+        <label>Input Text:</label>
+        <input type="text" value="🇨🇳 🇺🇸 (Should behave like text characters)">
+        
+        <label style="margin-top: 10px; display: block;">Textarea:</label>
+        <textarea rows="2">🇨🇳 🇺🇸 (Try deleting/copying these. If they are images, editing breaks.)</textarea>
+
+        <label style="margin-top: 10px; display: block;">ContentEditable Div:</label>
+        <div class="editable-box" contenteditable="true">
+            Edit me: 🇯🇵 🇰🇷 (Rich text editor simulation)
+        </div>
+    </section>
+
+    <section class="test-section">
+        <h2 data-i18n="secTable">4. Table Layout</h2>
+        <p data-i18n="descTable">Simulating Wikipedia or data tables.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th data-i18n="colCode">Code</th>
+                    <th data-i18n="colFlag">Flag</th>
+                    <th data-i18n="colName">Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>CN</td><td>🇨🇳</td><td>China</td></tr>
+                <tr><td>US</td><td>🇺🇸</td><td>United States</td></tr>
+                <tr><td>JP</td><td>🇯🇵</td><td>Japan</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="test-section">
+        <h2 data-i18n="secDynamic">5. Dynamic Content (MutationObserver)</h2>
+        <p data-i18n="descDynamic">Click to simulate loading comments or tweets.</p>
+        <button class="secondary" onclick="addFlags()" data-i18n="btnAdd">Add Random Flags</button>
+        <div id="dynamic-container" class="flag-grid" style="margin-top: 15px;"></div>
+    </section>
+
+    <section class="test-section">
+        <h2 data-i18n="secStress">6. Performance Stress Test</h2>
+        <p data-i18n="descStress">Render 2000 flags at once. Watch for page freeze.</p>
+        <button class="secondary" onclick="runStressTest()" data-i18n="btnStress">Generate 2000 Flags</button>
+        <div id="stress-result" style="margin-top: 10px; color: #666;"></div>
+        <div id="stress-container" class="flag-grid" style="font-size: 1rem; margin-top: 15px;"></div>
+    </section>
+</div>
+
+<script>
+    // --- Configuration & Data ---
+    const flags = ['🇨🇳', '🇺🇸', '🇯🇵', '🇰🇷', '🇬🇧', '🇫🇷', '🇩🇪', '🇮🇹', '🇷🇺', '🇪🇸', '🇧🇷', '🇮🇳', '🇨🇦', '🇦🇺', '🇻🇳', '🇹🇭'];
+    
+    const i18n = {
+        zh: {
+            mainTitle: "Windows 11 国旗 Emoji 修复测试",
+            subTitle: "深度验证与压力测试页 (v2.0)",
+            langBtn: "Switch to English",
+            secBasic: "1. 基础显示与排版",
+            descBasic: "测试不同字号和语境下的显示效果。",
+            normal: "正常:",
+            large: "大标题:",
+            small: "小字号:",
+            secEdge: "2. 格式化与边界情况",
+            descEdge: "测试嵌套标签、连续旗帜和复杂文本混合。",
+            bold: "粗体:",
+            italic: "斜体:",
+            link: "链接:",
+            combo: "连续 (无空格):",
+            brackets: "括号包裹:",
+            mixed: "混合文本:",
+            secInput: "3. 输入框与编辑器 (应保持原生)",
+            descInput: "脚本通常应忽略这些区域，以保留编辑功能（不应变成图片）。",
+            secTable: "4. 表格布局",
+            descTable: "模拟维基百科或数据列表。",
+            colCode: "代码",
+            colFlag: "旗帜",
+            colName: "名称",
+            secDynamic: "5. 动态内容 (MutationObserver)",
+            descDynamic: "点击按钮模拟 AJAX 加载（如评论区、推特流）。",
+            btnAdd: "添加随机旗帜",
+            secStress: "6. 性能压力测试",
+            descStress: "一次性渲染 2000 个旗帜，检测页面是否卡顿。",
+            btnStress: "生成 2000 个旗帜"
+        },
+        en: {
+            mainTitle: "Windows 11 Flag Emoji Fixer Test",
+            subTitle: "Deep Verification & Stress Test Page (v2.0)",
+            langBtn: "切换到中文",
+            secBasic: "1. Basic Display & Typography",
+            descBasic: "Check if flags render correctly in different sizes and contexts.",
+            normal: "Normal:",
+            large: "Heading:",
+            small: "Small:",
+            secEdge: "2. Formatting & Edge Cases",
+            descEdge: "Testing nested tags, contiguous flags, and complex text mixing.",
+            bold: "Bold:",
+            italic: "Italic:",
+            link: "Link:",
+            combo: "Combo (No spaces):",
+            brackets: "Brackets:",
+            mixed: "Mixed text:",
+            secInput: "3. Inputs & Editors (Should NOT be images)",
+            descInput: "The script should generally IGNORE these areas to preserve editing capability.",
+            secTable: "4. Table Layout",
+            descTable: "Simulating Wikipedia or data tables.",
+            colCode: "Code",
+            colFlag: "Flag",
+            colName: "Name",
+            secDynamic: "5. Dynamic Content (MutationObserver)",
+            descDynamic: "Click to simulate AJAX loading (comments, tweets).",
+            btnAdd: "Add Random Flags",
+            secStress: "6. Performance Stress Test",
+            descStress: "Render 2000 flags at once. Check for lag.",
+            btnStress: "Generate 2000 Flags"
+        }
+    };
+
+    // --- Auto Detect Language ---
+    // 读取浏览器语言，如果以 'zh' 开头则设为中文，否则为英文
+    const userLang = navigator.language || navigator.userLanguage;
+    let currentLang = userLang.startsWith('zh') ? 'zh' : 'en';
+
+    // --- Functions ---
+
+    function toggleLanguage() {
+        // 手动切换时取反
+        currentLang = currentLang === 'zh' ? 'en' : 'zh';
+        updateContent();
+    }
+
+    function updateContent() {
+        document.getElementById('langBtn').textContent = i18n[currentLang].langBtn;
+        
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (i18n[currentLang][key]) {
+                el.textContent = i18n[currentLang][key];
+            }
+        });
+    }
+
+    function addFlags() {
+        const container = document.getElementById('dynamic-container');
+        for(let i=0; i<10; i++) {
+            const span = document.createElement('span');
+            span.textContent = flags[Math.floor(Math.random() * flags.length)] + ' ';
+            // Randomly simulate nested structures sometimes
+            if (Math.random() > 0.7) {
+                const b = document.createElement('b');
+                b.textContent = span.textContent;
+                span.textContent = '';
+                span.appendChild(b);
+            }
+            container.appendChild(span);
+        }
+    }
+
+    function runStressTest() {
+        const container = document.getElementById('stress-container');
+        const resultDiv = document.getElementById('stress-result');
+        container.innerHTML = '';
+        resultDiv.textContent = currentLang === 'zh' ? '正在生成...' : 'Generating...';
+        
+        // Use setTimeout to allow UI to update text before freezing
+        setTimeout(() => {
+            const start = performance.now();
+            let html = '';
+            // Generating 2000 flags
+            for(let i=0; i<2000; i++) {
+                html += flags[Math.floor(Math.random() * flags.length)] + ' ';
+            }
+            container.innerHTML = html;
+            const end = performance.now();
+            
+            const time = (end - start).toFixed(2);
+            resultDiv.textContent = currentLang === 'zh' 
+                ? `生成完成: 耗时 ${time} 毫秒` 
+                : `Done: Took ${time} ms`;
+        }, 50);
+    }
+
+    // Initialize
+    updateContent();
+
+</script>
+
+</body>
+</html>
