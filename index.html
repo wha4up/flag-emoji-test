@@ -159,13 +159,13 @@
         <h2 data-i18n="secInput">3. Inputs & Editors (Should NOT be images)</h2>
         <p data-i18n="descInput">The script should generally IGNORE these areas to preserve editing capability.</p>
         
-        <label>Input Text:</label>
+        <label data-i18n="labelInput">Input Text:</label>
         <input type="text" data-i18n="inputValue" value="🇨🇳 🇺🇸 (Should behave like text characters)">
         
-        <label style="margin-top: 10px; display: block;">Textarea:</label>
+        <label style="margin-top: 10px; display: block;" data-i18n="labelTextarea">Textarea:</label>
         <textarea rows="2" data-i18n="textareaValue">🇨🇳 🇺🇸 (Try deleting/copying these. If they are images, editing breaks.)</textarea>
 
-        <label style="margin-top: 10px; display: block;">ContentEditable Div:</label>
+        <label style="margin-top: 10px; display: block;" data-i18n="labelEditable">ContentEditable Div:</label>
         <div class="editable-box" contenteditable="true" data-i18n="editableValue">
             Edit me: 🇯🇵 🇰🇷 (Rich text editor simulation)
         </div>
@@ -213,7 +213,7 @@
     const i18n = {
         zh: {
             mainTitle: "Windows 11 国旗 Emoji 修复测试",
-            subTitle: "深度验证与压力测试页 (v2.1)",
+            subTitle: "深度验证与压力测试页 (v2.2)",
             langBtn: "Switch to English",
             secBasic: "1. 基础显示与排版",
             descBasic: "测试不同字号和语境下的显示效果。",
@@ -230,8 +230,11 @@
             mixed: "混合文本:",
             secInput: "3. 输入框与编辑器 (应保持原生)",
             descInput: "脚本通常应忽略这些区域，以保留编辑功能（不应变成图片）。",
+            labelInput: "文本输入框 (Input):",
             inputValue: "🇨🇳 🇺🇸 (应表现为普通文本字符)",
+            labelTextarea: "多行文本域 (Textarea):",
             textareaValue: "🇨🇳 🇺🇸 (尝试删除或复制。如果变成了图片，编辑功能就会失效。)",
+            labelEditable: "可编辑 Div (ContentEditable):",
             editableValue: "编辑我: 🇯🇵 🇰🇷 (富文本编辑器模拟)",
             secTable: "4. 表格布局",
             descTable: "模拟维基百科或数据列表。",
@@ -247,7 +250,7 @@
         },
         en: {
             mainTitle: "Windows 11 Flag Emoji Fixer Test",
-            subTitle: "Deep Verification & Stress Test Page (v2.1)",
+            subTitle: "Deep Verification & Stress Test Page (v2.2)",
             langBtn: "切换到中文",
             secBasic: "1. Basic Display & Typography",
             descBasic: "Check if flags render correctly in different sizes and contexts.",
@@ -264,8 +267,11 @@
             mixed: "Mixed text:",
             secInput: "3. Inputs & Editors (Should NOT be images)",
             descInput: "The script should generally IGNORE these areas to preserve editing capability.",
+            labelInput: "Input Text:",
             inputValue: "🇨🇳 🇺🇸 (Should behave like text characters)",
+            labelTextarea: "Textarea:",
             textareaValue: "🇨🇳 🇺🇸 (Try deleting/copying these. If they are images, editing breaks.)",
+            labelEditable: "ContentEditable Div:",
             editableValue: "Edit me: 🇯🇵 🇰🇷 (Rich text editor simulation)",
             secTable: "4. Table Layout",
             descTable: "Simulating Wikipedia or data tables.",
